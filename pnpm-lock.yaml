@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -155,8 +155,8 @@ devDependencies:
     specifier: ^9.11.0
     version: 9.11.0(eslint@8.38.0)
   happy-dom:
-    specifier: ^9.0.0
-    version: 9.0.0
+    specifier: ^10.0.0
+    version: 10.0.0
   husky:
     specifier: ^8.0.3
     version: 8.0.3
@@ -222,7 +222,7 @@ devDependencies:
     version: 4.0.0
   vitest:
     specifier: ^0.31.0
-    version: 0.31.0(@vitest/ui@0.31.0)(happy-dom@9.0.0)
+    version: 0.31.0(@vitest/ui@0.31.0)(happy-dom@10.0.0)
   vue-eslint-parser:
     specifier: ^9.1.1
     version: 9.1.1(eslint@8.38.0)
@@ -289,6 +289,7 @@ packages:
   /@babel/helper-string-parser@7.22.5:
     resolution: {integrity: sha512-mM4COjgZox8U+JcXQwPijIZLElkgEpO5rsERVDJTc2qfCDfERyob6k5WegS14SX18IIjv+XD+GrqNumY5JRCDw==}
     engines: {node: '>=6.9.0'}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -299,6 +300,7 @@ packages:
   /@babel/helper-validator-identifier@7.22.5:
     resolution: {integrity: sha512-aJXu+6lErq8ltp+JhkJUfk1MTGyuA4v7f3pA+BJ5HLfNC6nAQ0Cpi9uOquUj8Hehg0aUiHzWQbOVJGao6ztBAQ==}
     engines: {node: '>=6.9.0'}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -322,6 +324,7 @@ packages:
     resolution: {integrity: sha512-7NF8pOkHP5o2vpmGgNGcfAeCvOYhGLyA3Z4eBQkT1RJlWu47n63bCs93QfJ2hIAFCil7L5P2IWhs1oToVgrL0Q==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    requiresBuild: true
     dependencies:
       '@babel/types': 7.22.5
     dev: true
@@ -345,6 +348,7 @@ packages:
   /@babel/types@7.22.5:
     resolution: {integrity: sha512-zo3MIHGOkPOfoRXitsgHLjEXmlDaD/5KU1Uzuc9GNiZPhSqVxVRtxuPaSBZDsYZ9qV88AjtMtWW7ww98loJ9KA==}
     engines: {node: '>=6.9.0'}
+    requiresBuild: true
     dependencies:
       '@babel/helper-string-parser': 7.22.5
       '@babel/helper-validator-identifier': 7.22.5
@@ -1705,7 +1709,7 @@ packages:
       magic-string: 0.30.0
       picocolors: 1.0.0
       std-env: 3.3.2
-      vitest: 0.31.0(@vitest/ui@0.31.0)(happy-dom@9.0.0)
+      vitest: 0.31.0(@vitest/ui@0.31.0)(happy-dom@10.0.0)
     dev: true
 
   /@vitest/expect@0.31.0:
@@ -1751,7 +1755,7 @@ packages:
       pathe: 1.1.0
       picocolors: 1.0.0
       sirv: 2.0.3
-      vitest: 0.31.0(@vitest/ui@0.31.0)(happy-dom@9.0.0)
+      vitest: 0.31.0(@vitest/ui@0.31.0)(happy-dom@10.0.0)
     dev: true
 
   /@vitest/utils@0.31.0:
@@ -1811,6 +1815,7 @@ packages:
 
   /@vue/compiler-core@3.3.4:
     resolution: {integrity: sha512-cquyDNvZ6jTbf/+x+AgM2Arrp6G4Dzbb0R64jiG804HRMfRiFXWI6kqUVqZ6ZR0bQhIoQjB4+2bhNtVwndW15g==}
+    requiresBuild: true
     dependencies:
       '@babel/parser': 7.22.7
       '@vue/shared': 3.3.4
@@ -1855,6 +1860,7 @@ packages:
 
   /@vue/compiler-ssr@3.3.4:
     resolution: {integrity: sha512-m0v6oKpup2nMSehwA6Uuu+j+wEwcy7QmwMkVNVfrV9P2qE5KshC6RwOCq8fjGS/Eak/uNb8AaWekfiXxbBB6gQ==}
+    requiresBuild: true
     dependencies:
       '@vue/compiler-dom': 3.3.4
       '@vue/shared': 3.3.4
@@ -1917,6 +1923,7 @@ packages:
 
   /@vue/shared@3.3.4:
     resolution: {integrity: sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -3517,11 +3524,11 @@ packages:
       duplexer: 0.1.2
     dev: true
 
-  /happy-dom@9.0.0:
-    resolution: {integrity: sha512-eWEdCL4vwxL6SPutXFQ1z38AK95zl/zwmCcHGaa6cfKw7jTUBA2rAfg0QXeQZTLsLS4fLsEEky7Sh/YBfGn4sQ==}
+  /happy-dom@10.0.0:
+    resolution: {integrity: sha512-qisxGYWhTe+Vx+8IcxOo0MgDLk3BIY0VRFC9LBLPyWYRIQWlkCAOhOEiMBqa7yVL3zh7lNxNKn+DKuIojpYHXg==}
     dependencies:
       css.escape: 1.5.1
-      he: 1.2.0
+      entities: 4.5.0
       iconv-lite: 0.6.3
       webidl-conversions: 7.0.0
       whatwg-encoding: 2.0.0
@@ -6197,7 +6204,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest@0.31.0(@vitest/ui@0.31.0)(happy-dom@9.0.0):
+  /vitest@0.31.0(@vitest/ui@0.31.0)(happy-dom@10.0.0):
     resolution: {integrity: sha512-JwWJS9p3GU9GxkG7eBSmr4Q4x4bvVBSswaCFf1PBNHiPx00obfhHRJfgHcnI0ffn+NMlIh9QGvG75FlaIBdKGA==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -6243,7 +6250,7 @@ packages:
       chai: 4.3.7
       concordance: 5.0.4
       debug: 4.3.4
-      happy-dom: 9.0.0
+      happy-dom: 10.0.0
       local-pkg: 0.4.3
       magic-string: 0.30.0
       pathe: 1.1.0
